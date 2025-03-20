@@ -9,4 +9,4 @@ document.write("O numero 1 é " + numero1 +"<br>");
 document.write("O numero 2 é " + numero2 +"<br>");
 
 var soma = numero1 + numero2;
-document.write("<p> A soma dos numeros e " + soma + "</p>" )
+document.write("<p> A soma dos numeros e " + soma + "</p>" );
