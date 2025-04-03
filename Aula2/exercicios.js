@@ -60,3 +60,76 @@ function ativ6()
 
     document.getElementById("mensagem").innerHTML = "Valor total: " + sub + "<br> Desconto: " + desc + "<p> Valor com desconto: " + total + "</p>";
 }
+
+function ativ7()
+{
+    let n1 = document.getElementById("n1").value;
+    let n2 = document.getElementById("n2").value;
+    let n3 = document.getElementById("n3").value;
+
+    let res = (Number(n1) + Number(n2) + Number(n3)) / 3;
+
+    document.getElementById("mensagem").innerHTML = "A media aritimetica das notas é " + res;
+}
+
+function ativ8()
+{
+    let peso = document.getElementById("peso").value;
+    let altura = document.getElementById("altura").value;
+
+    let imc = Number(peso) / Number(altura)**2;
+
+    document.getElementById("mensagem").innerHTML = "O IMMC é " + imc;
+}
+
+function ativ9()
+{
+    let prin = document.getElementById("prin").value;
+    let taxa = document.getElementById("taxa").value;
+    let tempo = document.getElementById("tempo").value;
+
+    let par = Number(prin) + (1 + Number(taxa) *  Number(tempo) );   
+
+    document.getElementById("mensagem").innerHTML = "Valor do montante: " + par;
+}
+
+function ativ10()
+{
+    let VH = document.getElementById("VH").value;
+    let TH = document.getElementById("TH").value;
+
+    let salario = Number(VH) * Number(TH) * 30;
+
+    document.getElementById("mensagem").innerHTML = "O salario é " + salario;
+}
+
+function ativ11()
+{
+    let n1 = document.getElementById("n1").value;
+    let n2 = document.getElementById("n2").value;
+
+    if(Number(n1) == Number(n2))
+    {
+        document.getElementById("mensagem").innerHTML = "Os numeros são iguais;";
+    }else{
+        document.getElementById("mensagem").innerHTML = "Os numeros são diferentes;";
+    }
+}
+
+function ativ12()
+{
+    let A = document.getElementById("A").value;
+    let B = document.getElementById("B").value;
+    let C = document.getElementById("C").value;
+
+    if(Number(A) + Number(B) == Number(C))
+    {
+        document.getElementById("mensagem").innerHTML = "A soma dos primeiros numeros é igual ao terceiro; " + A + " + " + B + " = " + C;
+    }else if(Number(A) + Number(B) > Number(C))
+    {
+        document.getElementById("mensagem").innerHTML = "A soma dos primeiros numeros é maior que o terceiro; " + A + " + " + B + " > " + C;
+    }else if(Number(A) + Number(B) < Number(C))
+    {
+        document.getElementById("mensagem").innerHTML = "A soma dos primeiros numeros é menor que o terceiro; " + A + " + " + B + " < " + C;
+    }
+}
